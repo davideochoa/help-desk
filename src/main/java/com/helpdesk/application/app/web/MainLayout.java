@@ -78,6 +78,11 @@ public class MainLayout extends AppLayout {
 
         }
 
+        if (accessChecker.hasAccess(CatalogosView.class)) {
+            nav.addItem(new AppNavItem("Catalogos", CatalogosView.class, LineAwesomeIcon.THINK_PEAKS.create()));
+
+        }
+
         if (accessChecker.hasAccess(HelloWorldView.class)) {
             nav.addItem(new AppNavItem("Hello World", HelloWorldView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
 
